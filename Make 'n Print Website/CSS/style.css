@@ -1,0 +1,205 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#b03060;
+  border:0;
+  padding-left:20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+/* Header */
+
+header{
+  background:#222222;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#b03060 5px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px;
+  font-weight:bold
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding:0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+header ul{
+  margin:0;
+  padding:0;
+}
+
+header .current a{
+  color:#b03060;
+}
+
+header a:hover{
+  color:#cccccc;
+}
+
+/* Showcase */
+
+#showcase{
+  min-height:500px;
+  background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url('../Media/background.png') no-repeat 0 -300px;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:150px;
+  font-size:55px;
+  margin-bottom:5px
+}
+
+#showcase h2{
+  font-size:30px;
+}
+
+#subscribe{
+  padding:15px;
+  color:#ffffff;
+  background:#222222;
+}
+
+#subscribe h1{
+  float:left;
+  margin-top:15px;
+}
+
+#subscribe form{
+  float:right;
+  margin-top:15px;
+}
+
+#subscribe input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes, Column, Contact */
+
+#boxes, #columns, #contact{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+#boxes .box, #columns .column{
+  float:left;
+  text-align:center;
+  width:30%;
+  padding:20px;
+  align-content:center;
+}
+
+#boxes .box img, #columns .column img{
+  width:50%;
+  height:200px;
+}
+
+#boxes h1, #columns h1, #columns h2, #contact h1, #contact p{
+  text-align:center;
+}
+
+/* Footer */
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  margin-right:0%;
+  position:static;
+  color:#ffffff;
+  background-color:#b03060;
+  text-align:center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1525px){
+  #boxes .box, #columns .column{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  #boxes .box img, #columns .column img{
+    width:200px;
+    height:200px;
+  }
+}
+
+@media screen and (max-width:855px){
+  header #branding,
+  header nav,
+  header nav li,
+  #subscribe h1,
+  #subscribe form{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  #showcase h1{
+    text-align:center;
+  }
+
+  #showcase h2{
+    text-align:center;
+  }
+
+  #subscribe button{
+    display:block;
+    width:100%;
+  }
+
+  #subscribe form input[type="email"]{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+@media screen and (mad-width:450px){
+  #boxes .box img, #columns .column img{
+    width:80%;
+    height:200px;
+  }
+}
